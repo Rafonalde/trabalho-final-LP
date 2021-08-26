@@ -1,3 +1,38 @@
+#Integrantes:
+#156366 Rafael Pinto de Albuquerque;
+#156300 Beatriz Marchi de Lira;
+#159494 Fabricio Monteiro de Barros Spina.
+
+def game_over_q_b():
+    print("Game over. Você morreu")
+    print("Você quer tentar de onde parou, do início ou sair do jogo?")
+    resposta = input(">").lower()
+    if resposta == ("de onde parou") or resposta == ("de onde parei") or resposta == ("tentar de onde parou") or resposta == ("tentar de onde parei"):
+        casa_de_marcos()
+    elif resposta == ("do início") or resposta == ("do inicio") or resposta == ("inicio") or resposta == ("início"):
+        start()
+    elif resposta == ("sair do jogo") or resposta == ("sair"):
+        exit()
+
+def game_over_andando_e_usp_2():
+    print("Game over. Você morreu")
+    print("Você quer tentar de onde parou, do início ou sair do jogo?")
+    resposta = input(">").lower()
+    if resposta == ("de onde parou") or resposta == ("de onde parei") or resposta == ("tentar de onde parou") or resposta == ("tentar de onde parei"):
+        locomoção2()
+    elif resposta == ("do início") or resposta == ("do inicio") or resposta == ("inicio") or resposta == ("início"):
+        start()
+    elif resposta == ("sair do jogo") or resposta == ("sair"):
+        exit()
+
+def jogar_de_novo():
+    print("Você quer jogar de novo?")
+    resposta = input(">").lower()
+    if resposta == ("sim") or resposta == ("s"):
+        start()
+    else:
+        exit()
+
 def tutorial():
     print("Seja bem vindo ao Jornada Em Busca da Sobrevivência!")
     print("Esse é um jogo de aventura baseado em textos. Acompanhe a trajetória de João e seu amigo Marcos em meio a uma situação apocalíptica.")
@@ -36,37 +71,6 @@ def start():
     print("- Certo! Vamos para sua casa manter seus pais seguros para que quando possível possamos aplicar a cura neles também.")
     print("Ao chegar na casa, Marcos diz não se lembrar onde está a chave, o que leva a dupla a entrar em seu primeiro desafio em meio ao apocalipse.")
     casa_de_marcos()
-
-def game_over_q_b():
-    print("Game over. Você morreu")
-    print("Você quer tentar de onde parou, do início ou sair do jogo?")
-    resposta = input(">").lower()
-    if resposta == ("de onde parou") or resposta == ("de onde parei") or resposta == ("tentar de onde parou") or resposta == ("tentar de onde parei"):
-        casa_de_marcos()
-    elif resposta == ("do início") or resposta == ("do inicio") or resposta == ("inicio") or resposta == ("início"):
-        start()
-    elif resposta == ("sair do jogo") or resposta == ("sair"):
-        exit()
-
-def game_over_andando_e_usp_2():
-    print("Game over. Você morreu")
-    print("Você quer tentar de onde parou, do início ou sair do jogo?")
-    resposta = input(">").lower()
-    if resposta == ("de onde parou") or resposta == ("de onde parei") or resposta == ("tentar de onde parou") or resposta == ("tentar de onde parei"):
-        locomoção2()
-    elif resposta == ("do início") or resposta == ("do inicio") or resposta == ("inicio") or resposta == ("início"):
-        start()
-    elif resposta == ("sair do jogo") or resposta == ("sair"):
-        exit()
-
-def jogar_de_novo():
-    print("Você quer jogar de novo?")
-    resposta = input(">").lower()
-    if resposta == ("sim") or resposta == ("s"):
-        start()
-    else:
-        exit()
-
 def casa_de_marcos():
     print("- João, onde procuramos primeiro?")
     resposta1 = input("Cozinha, quarto ou banheiro?""\n").lower()
