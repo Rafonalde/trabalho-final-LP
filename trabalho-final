@@ -41,7 +41,7 @@ def game_over_q_b():
     print("Game over. Você morreu")
     print("Você quer tentar de onde parou, do início ou sair do jogo?")
     resposta = input(">").lower()
-    if resposta == ("de onde parou") or resposta == ("de onde parei") or resposta("tentar de onde parou") or resposta("tentar de onde parei"):
+    if resposta == ("de onde parou") or resposta == ("de onde parei") or resposta == ("tentar de onde parou") or resposta == ("tentar de onde parei"):
         casa_de_marcos()
     elif resposta == ("do início") or resposta == ("do inicio") or resposta == ("inicio") or resposta == ("início"):
         start()
@@ -52,7 +52,7 @@ def game_over_andando_e_usp_2():
     print("Game over. Você morreu")
     print("Você quer tentar de onde parou, do início ou sair do jogo?")
     resposta = input(">").lower()
-    if resposta == ("de onde parou") or resposta == ("de onde parei") or resposta("tentar de onde parou") or resposta("tentar de onde parei"):
+    if resposta == ("de onde parou") or resposta == ("de onde parei") or resposta == ("tentar de onde parou") or resposta == ("tentar de onde parei"):
         locomoção2()
     elif resposta == ("do início") or resposta == ("do inicio") or resposta == ("inicio") or resposta == ("início"):
         start()
